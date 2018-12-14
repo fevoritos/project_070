@@ -12,7 +12,7 @@ def write_msg(user_id, text):
 vk_bot = vk_api.VkApi(token=TOKEN)
 long_poll = vk_bot.method('messages.getLongPollServer', {'need_pts' : 1, 'lp_version': 3})
 server, key, ts = long_poll['server'], long_poll['key'], long_poll['ts']
-print("гатов к работе")
+print("готов к работе")
 # + str(long_poll))
 
 while True:
